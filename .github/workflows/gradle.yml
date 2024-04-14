@@ -42,5 +42,5 @@ jobs:
     - name: web docker build and push
       run: |
         docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-        docker build -t moonect .
-        docker push moonect
+        docker build -t ${{ secrets.DOCKER_NAMESPACE }}/moonect .
+        docker push ${{ secrets.DOCKER_NAMESPACE }}/moonect
