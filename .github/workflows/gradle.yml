@@ -9,8 +9,10 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ "main" ]
-    tags: ["release-*"]
+    branches:
+      - "main"
+    tags:
+      - "release-*"
 permissions:
   contents: read
 
